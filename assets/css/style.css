@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body{
+  font-family: "Tajawal", serif;
+  direction: rtl;
+  height: 10000px;
+}
+nav{
+  background-color: #074d9c;
+  color: white;
+}
+.container a img{
+  width: 120px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+  color: white;
+
+}
+.nav-link:hover{
+  color: #001287;
+}
+
+
+/* start landing */
+.landing{
+  background-color: #074d9c;
+  min-height: calc(70vh - 56px);
+}
+.landing h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+}
+.landing p{
+  max-width: 700px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.btn-main{
+  background-color: #001287;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.btn-main:hover{
+  background-color: #fff;
+  color: #001287;
+}
+
+
+/* Slider */
+
+
+
+/* set scroll animation */
+/* RULES: calc(${width of slide-item + margin left + margin right}px * ${total slide-item}) */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(280px * 4));
+    }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(calc(280px * 4)); 
+  }
+  100% { transform: translateX(0); }
+}
+.slider-body{
+  width: 100%;
+  background-color: #2e318e;
+}
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 80%; /* You can adjust or delete this line */
+}
+
+.slide-track {
+  display: flex;
+  width: calc(280px * 8);
+}
+
+.slide-track.left{
+  animation: scroll-left 12s linear infinite; /* You can set the time to any number of seconds */
+}
+
+.slide-track.right{
+  animation: scroll-right 12s linear infinite; /* You can set the time to any number of seconds */
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slide-item {
+  width: 250px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 10px;
+  transition: transform 0.5s, box-shadow 0.5s;
+   /* Added transition for smooth effect */
+
+}
+
+.slide-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.678);
+}
+
+@media only screen and (max-width: 600px) {
+  .slider{
+      width: 100vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Start Features */
+.features{
+  background-color: #074d9c;
+  padding: 4rem 0;
+}
+.main-title img{
+  width: 160px;
+}
+.features .feat svg{
+  color: #001287;
+  font-size: 5rem;
+  transition: 0.5s;
+}
+.features .feat svg:hover{
+  color: #fff;
+  font-size: 6rem;
+}
+.features h4{
+  color: white;
+}
+/* Start Features */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end landing */
+
+/* @keyframes slide{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.logos{
+  overflow: hidden;
+  padding: 4rem 0;
+  background-color: white;
+  white-space: nowrap;
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+.logos-slide{
+  display: inline-block;
+  animation: slide 5s linear infinite;
+  -webkit-animation: slide 5s linear infinite;
+}
+.logos-slide img{
+  height: 120px;
+  margin: 0 2rem;
+} */
