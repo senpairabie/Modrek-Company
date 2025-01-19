@@ -23,6 +23,7 @@ nav{
 }
 
 
+
 /* start landing */
 .landing{
   background-color: #074d9c;
@@ -100,9 +101,9 @@ nav{
 }
 
 .slide-item {
-  width: 250px;
-  height: 150px;
-  margin: 15px;
+  width: 100px;
+  height: 120px;
+  margin: 15px 25px;
   border-radius: 10px;
   transition: transform 0.5s, box-shadow 0.5s;
    /* Added transition for smooth effect */
@@ -161,40 +162,144 @@ nav{
 
 
 
-
-
-
-
-
-
-
-
-/* end landing */
-
-/* @keyframes slide{
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.logos{
-  overflow: hidden;
-  padding: 4rem 0;
-  background-color: white;
-  white-space: nowrap;
-  width: 70%;
-  margin: 0 auto;
-
+/* slider section */
+/* التصميم الأساسي */
+.slider_section {
+  background: #074d9c;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 45px 0 145px 0;
 }
 
-.logos-slide{
+.slider_section .row {
+  align-items: center;
+}
+
+.slider_section #customCarousel1 {
+  width: 100%;
+  position: unset;
+}
+
+.slider_section .detail-box {
+  color: #00204a;
+}
+
+.slider_section .detail-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.slider_section .detail-box p {
+  color: #fefefe;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.slider_section .btn-box {
+  display: flex;
+  margin: 0 -5px;
+  margin-top: 25px;
+}
+
+.slider_section .btn-box a {
+  margin: 5px;
+  text-align: center;
+  width: 165px;
+}
+
+.slider_section .btn1 {
   display: inline-block;
-  animation: slide 5s linear infinite;
-  -webkit-animation: slide 5s linear infinite;
+  padding: 10px 15px;
+  background-color: #00bbf0;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
+  border: none;
 }
-.logos-slide img{
-  height: 120px;
-  margin: 0 2rem;
-} */
+
+.slider_section .btn1:hover {
+  background-color: #007fa4;
+}
+
+.slider_section .btn2 {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
+  border: none;
+}
+
+.slider_section .btn2:hover {
+  background-color: black;
+}
+
+.slider_section .img-box {
+  margin: 45px 0;
+}
+
+.slider_section .img-box img {
+  width: 100%;
+  animation: upDown 5s infinite;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-45px);
+  }
+  50% {
+    transform: translateY(45px);
+  }
+  100% {
+    transform: translateY(-45px);
+  }
+}
+
+/* تحسين العرض للشاشات المتوسطة والصغيرة */
+@media (max-width: 768px) {
+  .slider_section {
+    padding: 30px 0 100px 0;
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 2rem; /* تقليل حجم العنوان */
+    text-align: center; /* توسيط النص */
+  }
+
+  .slider_section .detail-box p {
+    font-size: 12px; /* تقليل حجم النص */
+    text-align: justify; /* محاذاة النص لجانبي الشاشة */
+    padding: 0 15px; /* هوامش داخلية لتحسين مظهر النص */
+    line-height: 1.6; /* تحسين المسافة بين الأسطر */
+  }
+
+  /* .slider_section .img-box img {
+    animation: none; */
+     /* إيقاف حركة الصورة */
+  /* } */
+}
+
+/* تحسين العرض للشاشات الصغيرة جدًا */
+@media (max-width: 576px) {
+  .slider_section .detail-box h1 {
+    font-size: 1.8rem; /* تقليل حجم العنوان للشاشات الأصغر */
+  }
+
+  .slider_section .detail-box p {
+    font-size: 11px; /* تقليل حجم النص للشاشات الصغيرة جدًا */
+  }
+
+  .slider_section .img-box img {
+    margin-top: 20px; /* ضبط المسافة لتحسين المظهر */
+  }
+}
+
+/* End slider section */
+
+
+
