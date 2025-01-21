@@ -19,7 +19,7 @@ nav{
 
 }
 .nav-link:hover{
-  color: #001287;
+  color: #2e318e;
 }
 .navbar-toggler:focus{
   color: #fefefe00 !important;
@@ -28,38 +28,6 @@ nav{
 .navbar-toggler-icon:focus{
   color: #fefefe00 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* start landing */
@@ -80,7 +48,7 @@ nav{
   color: white;
 }
 .btn-main{
-  background-color: #001287;
+  background-color: #2e318e;
   color: white;
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
@@ -89,7 +57,7 @@ nav{
 }
 .btn-main:hover{
   background-color: #fff;
-  color: #001287;
+  color: #2e318e;
 }
 
 
@@ -118,7 +86,7 @@ nav{
   margin: auto;
   overflow: hidden;
   position: relative;
-  max-width: 80%; /* You can adjust or delete this line */
+  max-width: 80%; 
 }
 
 .slide-track {
@@ -127,11 +95,11 @@ nav{
 }
 
 .slide-track.left{
-  animation: scroll-left 12s linear infinite; /* You can set the time to any number of seconds */
+  animation: scroll-left 12s linear infinite; 
 }
 
 .slide-track.right{
-  animation: scroll-right 12s linear infinite; /* You can set the time to any number of seconds */
+  animation: scroll-right 12s linear infinite; 
 }
 
 .slide-track:hover {
@@ -160,13 +128,6 @@ nav{
 }
 
 
-
-
-
-
-
-
-
 /* Start Features */
 .features{
   background-color: #074d9c;
@@ -181,22 +142,13 @@ nav{
   transition: 0.5s;
 }
 .features .feat svg:hover{
-  color: #fff;
-  font-size: 6rem;
+  color: #2e318e;
+  font-size: 5.5rem;
 }
 .features h4{
   color: white;
 }
 /* Start Features */
-
-
-
-
-
-
-
-
-
 
 
 /* slider section */
@@ -297,42 +249,37 @@ nav{
   }
 }
 
-/* تحسين العرض للشاشات المتوسطة والصغيرة */
 @media (max-width: 768px) {
   .slider_section {
     padding: 30px 0 100px 0;
   }
 
   .slider_section .detail-box h1 {
-    font-size: 2rem; /* تقليل حجم العنوان */
-    text-align: center; /* توسيط النص */
+    font-size: 2rem; 
+    text-align: center; 
   }
 
   .slider_section .detail-box p {
-    font-size: 12px; /* تقليل حجم النص */
-    text-align: justify; /* محاذاة النص لجانبي الشاشة */
-    padding: 0 15px; /* هوامش داخلية لتحسين مظهر النص */
-    line-height: 1.6; /* تحسين المسافة بين الأسطر */
+    font-size: 12px;
+    text-align: justify; 
+    padding: 0 15px; 
+    line-height: 1.6;
   }
 
-  /* .slider_section .img-box img {
-    animation: none; */
-     /* إيقاف حركة الصورة */
-  /* } */
+
 }
 
-/* تحسين العرض للشاشات الصغيرة جدًا */
 @media (max-width: 576px) {
   .slider_section .detail-box h1 {
-    font-size: 1.8rem; /* تقليل حجم العنوان للشاشات الأصغر */
+    font-size: 1.8rem; 
   }
 
   .slider_section .detail-box p {
-    font-size: 11px; /* تقليل حجم النص للشاشات الصغيرة جدًا */
+    font-size: 11px; 
   }
 
   .slider_section .img-box img {
-    margin-top: 20px; /* ضبط المسافة لتحسين المظهر */
+    margin-top: 20px; 
   }
 }
 
@@ -359,8 +306,9 @@ nav{
   color: white;
 }
 .team .box h4{
-  background-color: #001287;
+  background-color: #2e318e;
   color:white;
+  /* 001287 */
 }
 /* End Our Team */
 
