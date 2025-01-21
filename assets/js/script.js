@@ -1,4 +1,4 @@
-const imageNames = ["s1.png", "s2.png", "s3.png", "s4.png","s5.png","s6.png"]
+const imageNames = ["s1.png", "s2.png", "s3.png", "s4.png","s5.png","s4.png"]
 
 const sliderItems = imageNames.concat(imageNames);
 const sliders = document.querySelectorAll(".slide-track");

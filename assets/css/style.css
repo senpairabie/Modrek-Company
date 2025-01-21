@@ -21,6 +21,44 @@ nav{
 .nav-link:hover{
   color: #001287;
 }
+.navbar-toggler:focus{
+  color: #fefefe00 !important;
+}
+
+.navbar-toggler-icon:focus{
+  color: #fefefe00 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,7 +140,6 @@ nav{
 
 .slide-item {
   width: 100px;
-  height: 120px;
   margin: 15px 25px;
   border-radius: 10px;
   transition: transform 0.5s, box-shadow 0.5s;
@@ -139,7 +176,7 @@ nav{
   width: 160px;
 }
 .features .feat svg{
-  color: #001287;
+  color: white;
   font-size: 5rem;
   transition: 0.5s;
 }
@@ -301,5 +338,29 @@ nav{
 
 /* End slider section */
 
-
+/* Start Our Team */
+.team{
+  background-color:#074d9c;
+}
+.team .box{
+  background-color: #074d9c;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+.team .box img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.team h2{
+  color: white;
+}
+.team .box h4{
+  background-color: #001287;
+  color:white;
+}
+/* End Our Team */
 

@@ -23,13 +23,19 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="color: aliceblue;
+          border-radius: 5px;
+          border: none;
+          "
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">الرئيسية</a>
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >الرئيسية</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#slider-body">خدماتنا</a>
@@ -41,7 +47,7 @@
               <a class="nav-link" href="#slider_section">من انا</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">اراء العملاء</a>
+              <a class="nav-link" href="#team">اراء العملاء</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">تواصل معنا</a>
@@ -66,90 +72,158 @@
     <!-- Start Slider Bar -->
     <div class="slider-body">
       <div class="slider">
-        <div class="slide-track right" id="slide-track">
-        </div>
+        <div class="slide-track right" id="slide-track"></div>
       </div>
     </div>
 
     <!-- End Slider Bar -->
-        <!-- Start Features -->
-        <div class="features text-center pb-5" id="features">
-          <div class="container">
-            <div class="main-title  mb-5 position-relative">
-              <img class="mb-4" src="./assets/img/logo-n.png" alt="" />
-              <h2 class="text-light">نتائج عملائنا</h2>
-              <p class="text-light text-uppercase">
-                نعمل على تحقيق أهدافك بطريقة إحترافية
-              </p>
+    <!-- Start Features -->
+    <div class="features text-center pb-5" id="features">
+      <div class="container">
+        <div class="main-title mb-5 position-relative">
+          <img class="mb-4" src="./assets/img/logo-n.png" alt="" />
+          <h2 class="text-light">نتائج عملائنا</h2>
+          <p class="text-light text-uppercase">
+            نعمل على تحقيق أهدافك بطريقة إحترافية
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <i class="fa-solid fa-arrow-up-right-dots"></i>
             </div>
-            <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <div class="feat">
-                  <i class="fa-solid fa-arrow-up-right-dots"></i>
+            <h4 class="mb-3 mt-3 text-uppercase">مبيعات</h4>
+            <p class="text-light lh-lg">
+              مبيعات فوق المتوقعة بنسبة 30% خلال الشهر الأول من الحملة
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <h4 class="mb-3 mt-3 text-uppercase">المشاريع</h4>
+            <p class="text-light lh-lg">
+              تنفيذ أكثر من 167 مشروع تسويقي ناجح خلال العام الأول
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <h4 class="mb-3 mt-3 text-uppercase">حملات رقمية</h4>
+            <p class="text-light lh-lg">
+              تنفيذ أكثر من 4 الالف حملة رقمية ناجحة خلال العام الأول
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+    <!-- slider section -->
+    <section class="slider_section" id="slider_section">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>من نحن</h1>
+                    <p class="text-light lh-lg">
+                      في عالم مليء بالتنافس والتغير المستمر، نقدم خدمات
+                      تسويقية متكاملة تمكّنك من بناء هوية تجارية مميزة لا تنسى، 
+                      ندرك أن نجاح أي علامة تجارية يعتمد على رؤية واضحة 
+                      واستراتيجيات مبتكرة تعكس احتياجات السوق وتطلعات العملاء، 
+                      من خلال فريق متخصص يمتلك الخبرة والكفاءة، نعمل على تصميم 
+                      حملات تسويقية متكاملة تعزز ظهورك وتجعلك أقرب إلى جمهورك 
+                      المستهدف، نعتمد على أحدث التقنيات الرقمية وأفضل الممارسات 
+                      في مجال التسويق لتقديم حلول إبداعية تضمن تحقيق نتائج 
+                      استثنائية على المدى القصير والطويل،
+                    </p>                                    
+                  </div>
                 </div>
-                <h4 class="mb-3 mt-3 text-uppercase">مبيعات</h4>
-                <p class="text-light lh-lg">
-                  مبيعات فوق المتوقعة بنسبة 30% خلال الشهر الأول من الحملة
-                </p>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feat">
-                  <i class="fa-solid fa-city"></i>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="./assets/img/slider-img.png" alt="" />
+                  </div>
                 </div>
-                <h4 class="mb-3 mt-3 text-uppercase">المشاريع </h4>
-                <p class="text-light lh-lg">
-                  تنفيذ أكثر من 167 مشروع تسويقي ناجح خلال العام الأول
-                </p>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feat">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </div>
-                <h4 class="mb-3 mt-3 text-uppercase">حملات رقمية</h4>
-                <p class="text-light lh-lg">
-                  تنفيذ أكثر من 4 الالف حملة رقمية ناجحة خلال العام الأول
-                </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- End Features -->
-            <!-- slider section -->
-            <section class="slider_section" id="slider_section">
-              <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="detail-box">
-                            <h1>من نحن</h1>
-                            <p class="text-light lh-lg">
-                              في عالم مليء بالتنافس والتغير المستمر، نحن نقدم لك خدمات تسويقية متكاملة تمكّنك من بناء هوية تجارية مميزة لا تنسى. نحن ندرك أن نجاح أي علامة تجارية يعتمد على رؤية واضحة واستراتيجيات مبتكرة تعكس احتياجات السوق وتطلعات العملاء.  
-                              من خلال فريق متخصص يمتلك الخبرة والكفاءة، نعمل على تصميم حملات تسويقية متكاملة تعزز من ظهورك وتجعلك أقرب إلى جمهورك المستهدف. نعتمد على أحدث التقنيات الرقمية وأفضل الممارسات في مجال التسويق لتقديم حلول إبداعية تضمن تحقيق نتائج استثنائية على المدى القصير والطويل.  
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="img-box">
-                            <img src="./assets/img/slider-img.png" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+      </div>
+    </section>
     <!-- end slider section -->
+    <!-- Start Our Team -->
+    <div class="team text-center pb-5 pt-5" id="team">
+      <div class="container pb-5 pt-5">
+        <h2 class="fw-bold">آراء العملاء</h2>
+        <p class="text-white-50 mb-5">
+          نحن نفتخر بآراء عملائنا ونلتزم بتقديم أفضل الخدمات لتحقيق رضاهم التام.
+        </p>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <img
+                class="img-fluid"
+                src="./assets/img/rabie.jpg"
+                alt="صورة العميل"
+              />
+              <h4 class="p-3">محمد ربيع</h4>
+              <p class="text-white-50 p-2">
+                خدمة رائعة ودعم ممتاز! شكراً لتلبية جميع احتياجاتي بسرعة
+                واحترافية.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <img
+                class="img-fluid"
+                src="./assets/img/ahmed.jpg"
+                alt="صورة العميل"
+              />
+              <h4 class="p-3">أحمد علي</h4>
+              <p class="text-white-50 p-2">
+                فريق العمل متميز والخدمات تفوق التوقعات. أوصي الجميع بتجربتها.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <img
+                class="img-fluid"
+                src="./assets/img/sara.jpg"
+                alt="صورة العميل"
+              />
+              <h4 class="p-3">سارة محمد</h4>
+              <p class="text-white-50 p-2">
+                تجربتي كانت رائعة للغاية! الخدمة ممتازة وسريعة، شكراً لكم.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box">
+              <img
+                class="img-fluid"
+                src="./assets/img/sara.jpg"
+                alt="صورة العميل"
+              />
+              <h4 class="p-3">نور الهدى</h4>
+              <p class="text-white-50 p-2">
+                الاهتمام بالتفاصيل والجودة هما شعار هذا الفريق المبدع. شكراً
+                لكم!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-
+    <!-- End Our Team -->
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/all.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
-    
   </body>
 </html>
