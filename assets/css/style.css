@@ -316,7 +316,7 @@ nav{
 #section{
   direction: ltr;
   background-color: #074d9c;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -328,6 +328,12 @@ nav{
    -moz-border-radius: 15px;
    -ms-border-radius: 15px;
    -o-border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    width: 100%;
+  }
 }
 /* End Contact Us */
 
