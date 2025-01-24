@@ -18,7 +18,7 @@ nav{
 
 }
 .nav-link:hover{
-  color: #2e318e;
+  color: #00204a;
 }
 .navbar-toggler:focus{
   color: #fefefe00 !important;
@@ -27,7 +27,6 @@ nav{
 .navbar-toggler-icon:focus{
   color: #fefefe00 !important;
 }
-
 
 /* start landing */
 .landing{
@@ -47,7 +46,7 @@ nav{
   color: white;
 }
 .btn-main{
-  background-color: #2e318e;
+  background-color: #00204a;
   color: white;
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
@@ -56,7 +55,7 @@ nav{
 }
 .btn-main:hover{
   background-color: #fff;
-  color: #2e318e;
+  color: #00204a;
 }
 
 
@@ -79,7 +78,7 @@ nav{
 }
 .slider-body{
   width: 100%;
-  background-color: #2e318e;
+  background-color: #00204a;
 }
 .slider {
   margin: auto;
@@ -141,7 +140,7 @@ nav{
   transition: 0.5s;
 }
 .features .feat svg:hover{
-  color: #2e318e;
+  color: #00204a;
   font-size: 5.5rem;
 }
 .features h4{
@@ -305,29 +304,59 @@ nav{
   color: white;
 }
 .team .box h4{
-  background-color: #2e318e;
+  background-color: #00204a;
   color:white;
   /* 001287 */
 }
 /* End Our Team */
 
 /* Start Contact Us */
-
-#section{
+#section {
   direction: ltr;
-  background-color: #074d9c;
+  background-color: #074d9c; 
   padding-bottom: 2rem;
 }
 
-
-#container{
+#container {
   width: 80%;
-   box-shadow: 0px 0px  30px 10px rgba(0, 0, 0, 0,1);
-   border-radius: 15px;
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   -ms-border-radius: 15px;
-   -o-border-radius: 15px;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.form-custom {
+  padding: 2rem;
+  background-color: #00204a; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-custom {
+  background-color: #ffffff; 
+  border: 2px solid #00204a; 
+  color: #00204a; 
+}
+
+.input-custom::placeholder {
+  color: #074d9c;
+  opacity: 0.7;
+}
+
+.input-custom:focus {
+  outline: none;
+  border-color: #074d9c;
+  box-shadow: 0 0 8px rgba(7, 77, 156, 0.6);
+}
+
+.btn-custom {
+  background-color: #074d9c;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  color: white;
+  border: 0.5px solid #074d9c;
 }
 
 @media (max-width: 768px) {
@@ -336,6 +365,25 @@ nav{
   }
 }
 /* End Contact Us */
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease-in infinite;
+  -webkit-animation: fadeInUp 2s ease-in infinite;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Start Footer */
 footer{

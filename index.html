@@ -52,7 +52,7 @@
               <a class="nav-link" href="#team">اراء العملاء</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">تواصل معنا</a>
+              <a class="nav-link" href="#section">تواصل معنا</a>
             </li>
           </ul>
         </div>
@@ -221,133 +221,118 @@
       </div>
     </div>
     <!-- End Our Team -->
-    <!-- Start Contact Us -->
-    <section
-      class="min-vh-80 pt-3 d-flex justify-content-center align-items-center"
-      id="section"
+<!-- Start Contact Us -->
+<section
+  class="min-vh-80 pt-3 pb-5 d-flex justify-content-center align-items-center"
+  id="section"
+>
+  <div
+    class="row contact-form shadow rounded position-relative"
+    id="container"
+  >
+    <div
+      class="col-12 p-5 d-flex justify-content-center align-items-center"
     >
-      <div
-        class="row contact-form bg-light shadow rounded position-relative"
-        id="container"
-      >
-        <div class="col-md-6 p-0">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463877.31244172086!2d46.492870774353115!3d24.725455369170426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1737720117339!5m2!1sen!2seg"
-            class="w-100"
-            style="border: 0; height: 100%"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Google Maps Location"
-          ></iframe>
+      <form action="" class="w-100 form-custom" dir="rtl">
+        <legend class="mb-4 fs-4 text-white text-center">تواصل معنا</legend>
+        <div class="mb-3">
+          <label for="subject" class="form-label text-white">الموضوع</label>
+          <input
+            type="text"
+            class="form-control input-custom"
+            id="subject"
+            placeholder="اكتب موضوعك هنا"
+          />
         </div>
-        <div
-          class="col-md-6 p-5 d-flex justify-content-center align-items-center"
-        >
-          <form action="" class="w-100" dir="rtl">
-            <legend class="mb-4 fs-4 text-dark">تواصل معنا</legend>
-            <div class="mb-3">
-              <label for="subject" class="form-label">الموضوع</label>
-              <input
-                type="text"
-                class="form-control"
-                id="subject"
-                placeholder="اكتب موضوعك هنا"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">الايميل</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="example@gmail.com"
-              />
-            </div>
-            <div class="form-floating">
-              <textarea
-                class="form-control mb-3"
-                id="textarea"
-                style="height: 7rem; resize: none"
-                placeholder="Write your message..."
-              ></textarea>
-              <label for="textarea"></label>
-            </div>
-            <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-dark">ارسال</button>
-            </div>
-          </form>
+        <div class="mb-3">
+          <label for="email" class="form-label text-white">الإيميل</label>
+          <input
+            type="email"
+            class="form-control input-custom"
+            id="email"
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control mb-3 input-custom"
+            id="textarea"
+            style="height: 7rem; resize: none"
+            placeholder="اكتب رسالتك هنا..."
+          ></textarea>
+          <label for="textarea"></label>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-custom">إرسال</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- End Contact Us -->
+
+
+<!-- Start Footer -->
+<footer class="text-light py-4">
+  <div class="container px-4">
+    <div class="row d-flex justify-content-between align-items-start">
+      <div class="col-12 col-lg-4 mb-3">
+        <h3 class="fw-bold">مدرك</h3>
+        <p>
+          في عالم مليء بالتنافس والتغير المستمر، نقدم خدمات تسويقية متكاملة تمكّنك من بناء 
+          هوية تجارية مميزة لا تُنسى. ندرك أن نجاح أي علامة تجارية يعتمد على رؤية واضحة 
+          واستراتيجيات مبتكرة تعكس احتياجات السوق وتطلعات العملاء.
+        </p>
+        <p>+201094245990</p>
+        <p>info@modrek.com</p>
+      </div>
+
+      <div class="col-6 col-lg-2 mb-3">
+        <h4 class="fw-bold">القائمة</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-light">الرئيسية</a></li>
+          <li><a href="#about" class="text-decoration-none text-light">عن الموقع</a></li>
+          <li><a href="#services" class="text-decoration-none text-light">خدماتنا</a></li>
+          <li><a href="#contact" class="text-decoration-none text-light">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2 mb-3">
+        <h4 class="fw-bold">روابط مفيدة</h4>
+        <ul class="list-unstyled">
+          <li><a href="#faq" class="text-decoration-none text-light">الأسئلة الشائعة</a></li>
+          <li><a href="#privacy-policy" class="text-decoration-none text-light">سياسة الخصوصية</a></li>
+          <li><a href="#terms" class="text-decoration-none text-light">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2 mb-3" id="services">
+        <h4 class="fw-bold">خدماتنا</h4>
+        <ul class="list-unstyled fade-in">
+          <li><a href="#digital-campaigns" class="text-decoration-none text-light">إدارة الحملات الرقمية</a></li>
+          <li><a href="#strategic-planning" class="text-decoration-none text-light">التخطيط الاستراتيجي</a></li>
+          <li><a href="#sales-growth" class="text-decoration-none text-light">زيادة نمو المبيعات</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-2 text-lg-start mb-3">
+        <h4 class="fw-bold">تابعنا</h4>
+        <div>
+          <a href="https://www.instagram.com" class="text-decoration-none text-light me-3">
+            <i class="bi bi-instagram fs-2"></i>
+          </a>
+          <a href="https://www.facebook.com" class="text-decoration-none text-light me-3">
+            <i class="bi bi-facebook fs-2"></i>
+          </a>
+          <a href="https://www.linkedin.com" class="text-decoration-none text-light me-3">
+            <i class="bi bi-linkedin fs-2"></i>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- End Contact Us -->
-    <!-- Start Footer -->
-    <footer class="text-light py-4">
-      <div class="container px-4">
-        <div class="row d-flex justify-content-between align-items-start">
-          <!-- القسم الأول: وصف الموقع -->
-          <div class="col-12 col-lg-4 mb-3">
-            <h3 class="fw-bold">مدرك</h3>
-            <p>
-              في عالم مليء بالتنافس والتغير المستمر، نقدم خدمات تسويقية متكاملة تمكّنك من بناء 
-              هوية تجارية مميزة لا تُنسى. ندرك أن نجاح أي علامة تجارية يعتمد على رؤية واضحة 
-              واستراتيجيات مبتكرة تعكس احتياجات السوق وتطلعات العملاء.
-            </p>
-            <p>+201094245990</p>
-            <p>info@modrek.com</p>
-          </div>
-
-          <!-- القسم الثاني: القائمة الرئيسية -->
-          <div class="col-6 col-lg-2 mb-3">
-            <h4 class="fw-bold">القائمة</h4>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-decoration-none text-light">الرئيسية</a></li>
-              <li><a href="#about" class="text-decoration-none text-light">عن الموقع</a></li>
-              <li><a href="#services" class="text-decoration-none text-light">خدماتنا</a></li>
-              <li><a href="#contact" class="text-decoration-none text-light">اتصل بنا</a></li>
-            </ul>
-          </div>
-
-          <!-- القسم الثالث: روابط مفيدة -->
-          <div class="col-6 col-lg-2 mb-3">
-            <h4 class="fw-bold">روابط مفيدة</h4>
-            <ul class="list-unstyled">
-              <li><a href="#faq" class="text-decoration-none text-light">الأسئلة الشائعة</a></li>
-              <li><a href="#privacy-policy" class="text-decoration-none text-light">سياسة الخصوصية</a></li>
-              <li><a href="#terms" class="text-decoration-none text-light">الشروط والأحكام</a></li>
-            </ul>
-          </div>
-
-          <!-- القسم الرابع: خدمات الموقع -->
-          <div class="col-6 col-lg-2 mb-3">
-            <h4 class="fw-bold">خدماتنا</h4>
-            <ul class="list-unstyled">
-              <li><a href="#branding" class="text-decoration-none text-light">تصميم الهوية التجارية</a></li>
-              <li><a href="#marketing-strategies" class="text-decoration-none text-light">إعداد الاستراتيجيات</a></li>
-              <li><a href="#ads" class="text-decoration-none text-light">حملات تسويقية</a></li>
-              <li><a href="#digital-tools" class="text-decoration-none text-light">الأدوات الرقمية</a></li>
-            </ul>
-          </div>
-
-          <!-- القسم الخامس: متابعة على السوشيال ميديا -->
-          <div class="col-12 col-lg-2 text-lg-start mb-3">
-            <h4 class="fw-bold">تابعنا</h4>
-            <div>
-              <a href="https://www.instagram.com" class="text-decoration-none text-light me-3">
-                <i class="bi bi-instagram fs-2"></i>
-              </a>
-              <a href="https://www.facebook.com" class="text-decoration-none text-light me-3">
-                <i class="bi bi-facebook fs-2"></i>
-              </a>
-              <a href="https://www.linkedin.com" class="text-decoration-none text-light me-3">
-                <i class="bi bi-linkedin fs-2"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/all.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
