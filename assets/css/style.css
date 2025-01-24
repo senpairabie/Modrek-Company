@@ -2,7 +2,6 @@
 body{
   font-family: "Tajawal", serif;
   direction: rtl;
-  height: 10000px;
 }
 nav{
   background-color: #074d9c;
@@ -312,3 +311,36 @@ nav{
 }
 /* End Our Team */
 
+/* Start Contact Us */
+
+#section{
+  direction: ltr;
+  background-color: #074d9c;
+  padding-bottom: 4rem;
+}
+
+
+#container{
+  width: 80%;
+   box-shadow: 0px 0px  30px 10px rgba(0, 0, 0, 0,1);
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+/* End Contact Us */
+
+/* Start Footer */
+footer{
+  padding-top: 3rem;
+  background-color: #00204a;
+}
+footer ul {
+  padding-right: 0;
+  list-style: none;
+}
+footer h4 {
+  margin-bottom: 1rem;
+}
+/* End Footer */
