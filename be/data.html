@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض الرسائل</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body dir="rtl">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">الرسائل الواردة</h2>
+
+        <button id="exportBtn" class="btn btn-success mb-4">تحميل البيانات كملف Excel</button>
+
+        <table id="emailsTable" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>اسم المشروع</th>
+                    <th>رابط المنتج</th>
+                    <th>رقم الهاتف</th>
+                    <th>الإيميل</th>
+                    <th>الرسالة</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'https://mudrk.net/be/get_email',
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        const emails = response.data;
+                        let tableContent = '';
+                        emails.forEach(function(email) {
+                            tableContent += `
+                                <tr>
+                                    <td>${email.project_name}</td>
+                                    <td><a href="${email.product_url}" target="_blank">${email.product_url}</a></td>
+                                    <td>${email.phone}</td>
+                                    <td>${email.email}</td>
+                                    <td>${email.message}</td>
+                                </tr>
+                            `;
+                        });
+                        $('#emailsTable tbody').html(tableContent);
+                    } else {
+                        alert('لا توجد رسائل حالياً.');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert('حدث خطأ في الاتصال بالـ API.');
+                }
+            });
+
+            $('#exportBtn').click(function() {
+                const table = document.getElementById("emailsTable");
+                const wb = XLSX.utils.table_to_book(table, { sheet: "رسائل" });
+                const wbout = XLSX.write(wb, { bookType: 'xlsx', bookSST: true, type: 'array' });
+                saveAs(new Blob([wbout], { type: "application/octet-stream" }), "emails_data.xlsx");
+            });
+        });
+    </script>
+</body>
+</html>

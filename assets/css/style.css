@@ -44,6 +44,7 @@ nav{
   margin-bottom: 2rem;
   font-size: 1.2rem;
   color: white;
+  margin: 20px auto;
 }
 .btn-main{
   background-color: #00204a;
@@ -312,6 +313,7 @@ nav{
 
 /* Start Contact Us */
 #section {
+  width: 100%;
   direction: ltr;
   background-color: #074d9c; 
   padding-bottom: 2rem;
