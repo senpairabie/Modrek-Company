@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -136,7 +137,7 @@
       </div>
     </nav>
     <!-- End NavBar -->
-    <div class="landing d-flex justify-content-center align-items-center">
+    <div class="landing d-flex justify-content-center align-items-center wow fadeInDownBig">
       <div class="text-center text-light">
         <h1>مُدرك للحلول التسويقية</h1>
         <p>
@@ -188,7 +189,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 wow fadeInRightBig">
             <div class="feat">
               <i class="fa-solid fa-arrow-up-right-dots"></i>
             </div>
@@ -198,7 +199,7 @@
               باستخدام تقنيات الإعلان المدفوع.
             </p>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUpBig">
             <div class="feat">
               <i class="fa-solid fa-city"></i>
             </div>
@@ -208,11 +209,11 @@
               الحملات المدفوعة على وسائل التواصل الاجتماعي.
             </p>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 wow fadeInLeftBig">
             <div class="feat">
               <i class="fa-solid fa-pen-to-square"></i>
             </div>
-            <h4 class="mb-3 mt-3 text-uppercase">الحملات الرقمية الناجحة</h4>
+            <h4 class="mb-3 mt-3 text-uppercase ">الحملات الرقمية الناجحة</h4>
             <p class="text-light lh-lg">
               تنفيذ أكثر من 4 آلاف حملة رقمية ناجحة، مما أدى إلى تعزيز الاستهداف
               وتحقيق أهداف النمو.
@@ -223,7 +224,7 @@
     </div>
     <!-- End Features -->
     <!-- Start Slider Section -->
-    <section class="slider_section" id="slider_section">
+    <section class="slider_section wow fadeOut" id="slider_section">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -263,14 +264,14 @@
     <!-- Start Our Team -->
     <div class="team text-center pb-5 pt-5" id="team">
       <div class="container pb-5 pt-5">
-        <h2 class="fw-bold text-light">آراء شركائنا</h2>
-        <p class="text-white-50 mb-5">
+        <h2 class="fw-bold text-light wow flipInX">آراء شركائنا</h2>
+        <p class="text-white-50 mb-5 wow flipInX">
           في مُدرك نعتز بآراء شركائنا ونفخر بتقديم أفضل الخدمات و الحلول
           التسويقية التي تعكس على نجاح مشاريعهم وتلبي احتياجاتهم بطريقة إحترافية
         </p>
         <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <div class="box">
+          <div class="col-md-6 col-lg-3 ">
+            <div class="box wow bounceInRight" data-wow-duration="3s">
               <img
                 class="img-fluid rounded-circle"
                 src="./assets/img/rabie.jpg"
@@ -284,7 +285,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="box">
+            <div class="box wow bounceInUp" data-wow-duration="3s">
               <img
                 class="img-fluid rounded-circle"
                 src="./assets/img/ahmed.jpg"
@@ -297,7 +298,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="box">
+            <div class="box wow bounceInUp" data-wow-duration="3s">
               <img
                 class="img-fluid rounded-circle"
                 src="./assets/img/sara.jpg"
@@ -309,8 +310,8 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box">
+          <div class="col-md-6 col-lg-3 ">
+            <div class="box wow bounceInLeft" data-wow-duration="3s">
               <img
                 class="img-fluid rounded-circle"
                 src="./assets/img/sara.jpg"
@@ -421,17 +422,17 @@
             <h4 class="fw-bold">سياساتنا</h4>
             <ul class="list-unstyled">
               <li>
-                <a href="#faq" class="text-decoration-none text-light">
+                <a href="./asked_questions.html" class="text-decoration-none text-light">
                   الأسئلة المتكررة
                 </a>
               </li>
               <li>
-                <a href="#privacy-policy" class="text-decoration-none text-light">
+                <a href="./privacy_policy.html" class="text-decoration-none text-light">
                   سياسة الخصوصية وحماية البيانات
                 </a>
               </li>
               <li>
-                <a href="#terms" class="text-decoration-none text-light">
+                <a href="./conditions.html" class="text-decoration-none text-light">
                   الشروط والأحكام العامة
                 </a>
               </li>
@@ -501,8 +502,12 @@
     </footer>
     <!-- End Footer -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/all.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/send_email.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
